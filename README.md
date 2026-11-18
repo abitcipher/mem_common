@@ -22,8 +22,8 @@ where your safety depends on it.
 Download the APK for your phone from the latest release on the
 [Releases page](../../releases/latest):
 
-- `arm64-v8a`: nearly all phones from the last ten years;
-- `armeabi-v7a`: older 32-bit phones;
+- [`arm64-v8a`](https://github.com/abitcipher/mem_common/releases/download/mem.106/mem-106-arm64-v8a.apk): nearly all phones from the last ten years;
+- [`armeabi-v7a`](https://github.com/abitcipher/mem_common/releases/download/mem.106/mem-106-armeabi-v7a.apk): older 32-bit phones;
 - `x86_64`: emulators.
 
 Compare the file with `SHA256SUMS` and the signing certificate in the release notes
