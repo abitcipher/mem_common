@@ -3,6 +3,34 @@
 All notable changes to MEM. Versions follow [SemVer](https://semver.org/); before 1.0 the wire
 format may change between minor versions.
 
+## [mem.107] — 2026-11-19
+
+### Added
+
+- **Barcode scanner for Mini Apps:** a Mini App can show a scan button. The camera opens on
+  MEM's own screen, and only when you tap it. The Mini App gets only the codes you scan, never
+  the picture, and never MEM's own codes such as contact cards. It reads QR, Data Matrix,
+  Code 128, EAN, UPC, ITF and Code 39, including GS1 DataMatrix and GS1-128 on medicine packs
+  and shipping labels. You can send one code, or scan many and send them together, with equal
+  codes counted. The install screen says when a Mini App can ask you to scan.
+- **Sample Mini App "kit check"** (`samples/miniapp-stock`): scan a bag's contents in one go;
+  its service compares them with the bag's list and reports missing, expired and foreign items.
+- **iPhone beta:** each release now carries an unsigned iPhone build
+  (`mem-<number>-ios-unsigned.ipa`), installed with AltStore, SideStore or Sideloadly and your
+  own Apple ID (docs/install-ios.md). Not yet tested on a real iPhone. Bluetooth, Wi-Fi Direct,
+  pairing by sound, calls and push wake-ups are Android-only for now.
+
+### Fixed
+
+- **The built-in hub needed an address:** MEM's own hub is built in, but the hub switch stayed
+  locked until you typed an address. Now the hub screen shows the built-in address and the
+  switch works with the field empty; enter an address only to use another hub. The hub stays
+  off until you turn it on.
+
+### Changed
+
+- **Networking library updated** (iroh 1.4.2), needed for the iPhone build.
+
 ## [mem.106] — 2026-11-18
 
 ### Added
@@ -141,7 +169,7 @@ first (make a backup in MEM, uninstall, install, restore).
 - "Mute" on a contact is shown but not available yet.
 - There is no MEM hub set by default: to use one, enter its address under Channels.
 
-## [Unreleased]
+## [mem.107] — 2026-11-19
 
 ### Added — encrypted backup and recovery phrase
 

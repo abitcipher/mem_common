@@ -22,13 +22,20 @@ where your safety depends on it.
 Download the APK for your phone from the latest release on the
 [Releases page](../../releases/latest):
 
-- [`arm64-v8a`](https://github.com/abitcipher/mem_common/releases/download/mem.106/mem-106-arm64-v8a.apk): nearly all phones from the last ten years;
-- [`armeabi-v7a`](https://github.com/abitcipher/mem_common/releases/download/mem.106/mem-106-armeabi-v7a.apk): older 32-bit phones;
+- [`arm64-v8a`](https://github.com/abitcipher/mem_common/releases/download/mem.107/mem-107-arm64-v8a.apk): nearly all phones from the last ten years;
+- [`armeabi-v7a`](https://github.com/abitcipher/mem_common/releases/download/mem.107/mem-107-armeabi-v7a.apk): older 32-bit phones;
 - `x86_64`: emulators.
 
 Compare the file with `SHA256SUMS` and the signing certificate in the release notes
 (`sha256sum -c SHA256SUMS --ignore-missing`). Updates are signed with the same key, so they
 install over the previous version. Only the newest release is kept here.
+
+### Install on iPhone (beta, iOS 15 and later)
+
+[`mem-107-ios-unsigned.ipa`](https://github.com/abitcipher/mem_common/releases/download/mem.107/mem-107-ios-unsigned.ipa)
+is not signed: install it with AltStore, SideStore or Sideloadly and your own Apple ID (with a
+free Apple ID it must be refreshed every 7 days). Step by step, and what works on iPhone so far:
+[docs/install-ios.md](docs/install-ios.md). Not yet tested on a real iPhone.
 
 ### What is here
 
@@ -36,6 +43,7 @@ install over the previous version. Only the newest release is kept here.
 |---|---|
 | [CHANGELOG.md](CHANGELOG.md) | What each release added, changed and fixed |
 | [presentations/](presentations/) | The MEM presentation, in English and Ukrainian (PDF) |
+| [docs/install-ios.md](docs/install-ios.md) | Installing the iPhone beta, and what works on iPhone so far |
 | [docs/mini-apps.md](docs/mini-apps.md) | Building a Mini App: a small app inside MEM that talks to your service end to end |
 | [SECURITY.md](SECURITY.md) | How to report a vulnerability |
 
